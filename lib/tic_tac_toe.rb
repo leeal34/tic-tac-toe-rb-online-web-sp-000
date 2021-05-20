@@ -9,15 +9,6 @@ WIN_COMBINATIONS = [
 [6,4,2] # right_diagonal 
 ]
 
-def play(board)
-  turn(board) until over?(board)
-  if won?(board)
-    puts "Congratulations #{winner(board)}!"
-  elsif draw?(board)
-    puts "Cat's Game!"
-  end
-end
-
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts '-----------'
@@ -88,6 +79,14 @@ def winner(board)
   end
 end
   
+def play(board)
+  turn(board) until over?(board)
+  if won?(board)
+    puts "Congratulations #{winner(board)}!"
+  elsif draw?(board)
+    puts "Cat's Game!"
+  end
+end
 
 
 
