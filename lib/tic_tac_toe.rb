@@ -10,4 +10,5 @@ WIN_COMBINATIONS = [
 ]
 
 def play(board)
-  turn(board) until 
+  turn(board) until over?(board)
+  
