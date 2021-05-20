@@ -18,7 +18,8 @@ def play(board)
   end
 end
 
-def 
+def display_board(board)
+  
 
 
 
